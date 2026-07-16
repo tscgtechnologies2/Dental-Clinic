@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lumina Dental Studio offers modern, compassionate, and gentle dental care in Chicago. From general teeth cleaning to advanced cosmetic and restorative treatments, we care for your smile.">
+  <title>Lumina Dental Studio | Gentle Care for Brighter Smiles</title>
+  <!-- Google Fonts: Plus Jakarta Sans for Headings, Inter for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Sticky Navigation Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#home" class="logo" id="logo-link">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8.5 2 6 5 6 9.5C6 14 10 18 12 21.5C14 18 18 14 18 9.5C18 5 15.5 2 12 2ZM12 12C10.62 12 9.5 10.88 9.5 9.5C9.5 8.12 10.62 7 12 7C13.38 7 14.5 8.12 14.5 9.5C14.5 10.88 13.38 12 12 12Z" fill="currentColor"/>
+          <path d="M12 22C12.5 22 13 21.5 13 21C13 20.5 12.5 20 12 20C11.5 20 11 20.5 11 21C11 21.5 11.5 22 12 22Z" fill="currentColor"/>
+        </svg>
+        <span>Lumina</span>Dental
+      </a>
+
+      <!-- Hamburger toggle for mobile -->
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <nav class="nav-menu-wrapper" id="nav-menu">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#doctors" class="nav-link">Doctors</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#booking" class="btn btn-primary nav-cta">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="badge">✨ Welcome to Lumina Dental Studio</span>
+        <h1 class="hero-title">Gentle care for <br><span class="highlight-text">brighter smiles.</span></h1>
+        <p class="hero-subtitle">
+          Experience compassionate, high-tech dental care tailored to your family's needs in Chicago's Northside. Our relaxing, boutique studio will change the way you think about dentistry.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#booking" class="btn btn-primary btn-large">Book Appointment</a>
+          <a href="#services" class="btn btn-secondary btn-large">View Services</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Years of Care</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">99%</span>
+            <span class="stat-label">Happy Patients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Zero</span>
+            <span class="stat-label">Dental Anxiety</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual-wrapper">
+        <div class="hero-visual">
+          <div class="visual-bg-circle"></div>
+          <div class="visual-card floating-card-1">
+            <div class="card-icon">⭐</div>
+            <div class="card-text">
+              <h4>Modern Tech</h4>
+              <p>3D Scanning & Imaging</p>
+            </div>
+          </div>
+          <div class="visual-card floating-card-2">
+            <div class="card-icon">🛡️</div>
+            <div class="card-text">
+              <h4>Safe & Clean</h4>
+              <p>100% Mercury-Free</p>
+            </div>
+          </div>
+          <!-- Modern Dentist Office Photo -->
+          <img class="hero-img" src="assets/hero_dental.jpg" alt="Lumina Dental Studio modern and welcoming reception lobby" width="500" height="500">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Services Section -->
+  <section class="services-section section-padding" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-badge">Treatments & Care</span>
+        <h2>Our Dental Services</h2>
+        <p>We provide full-spectrum dental care to support your health. Select a category below to filter our specialized treatments.</p>
+      </div>
+
+      <!-- Service category filter tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Services</button>
+        <button class="filter-btn" data-filter="preventive">Preventive & Family</button>
+        <button class="filter-btn" data-filter="cosmetic">Cosmetic Dentistry</button>
+        <button class="filter-btn" data-filter="restorative">Restorative & Surgical</button>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid" id="services-grid">
+        
+        <!-- Card 1: Preventive Exams (Preventive) -->
+        <div class="service-card" data-category="preventive">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 11l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Exams & Cleanings</h3>
+          <p>Prevent problems before they start. Our dental cleanings, thorough checkups, and diagnostic screenings keep your mouth fresh and healthy.</p>
+          <ul class="service-features">
+            <li>Plaque & tartar removal</li>
+            <li>Digital cavity checks</li>
+            <li>Oral screening assessment</li>
+          </ul>
+          <a href="#booking" class="service-link">Book Now &rarr;</a>
+        </div>
+
+        <!-- Card 2: Teeth Whitening (Cosmetic) -->
+        <div class="service-card" data-category="cosmetic">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3>Teeth Whitening</h3>
+          <p>Brighten your smile up to 8 shades in just one comfortable session using our advanced clinic bleaching systems that minimize sensitivity.</p>
+          <ul class="service-features">
+            <li>In-office rapid whitening</li>
+            <li>Custom take-home trays</li>
+            <li>Enamel-safe protection</li>
+          </ul>
+          <a href="#booking" class="service-link">Book Now &rarr;</a>
+        </div>
+
+        <!-- Card 3: Clear Aligners (Cosmetic) -->
+        <div class="service-card" data-category="cosmetic">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8 12a4 4 0 0 1 8 0"/>
+            </svg>
+          </div>
+          <h3>Clear Aligner Ortho</h3>
+          <p>Achieve a straighter, confident smile without metal braces. Our custom clear aligners are comfortable, removable, and nearly invisible.</p>
+          <ul class="service-features">
+            <li>Custom 3D scan mapping</li>
+            <li>Removable, hygienic aligners</li>
+            <li>Fewer clinical visits</li>
+          </ul>
+          <a href="#booking" class="service-link">Book Now &rarr;</a>
+        </div>
+
+        <!-- Card 4: Dental Implants (Restorative) -->
+        <div class="service-card" data-category="restorative">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </div>
+          <h3>Advanced Implants</h3>
+          <p>The gold standard for replacing missing teeth. Implants fuse with your jawbone to create a permanent, natural-looking tooth restoration.</p>
+          <ul class="service-features">
+            <li>Single or multi-tooth implant</li>
+            <li>Biocompatible titanium roots</li>
+            <li>Lifelong smile restoration</li>
+          </ul>
+          <a href="#booking" class="service-link">Book Now &rarr;</a>
+        </div>
+
+        <!-- Card 5: Pediatric Care (Preventive) -->
+        <div class="service-card" data-category="preventive">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h3>Kids' Dentistry</h3>
+          <p>We make children's dental appointments fun, gentle, and relaxing. Our pediatric care focuses on early health and building lifetime trust.</p>
+          <ul class="service-features">
+            <li>Gentle child cleanings</li>
+            <li>Protective sealants & fluoride</li>
+            <li>Interactive dental education</li>
+          </ul>
+          <a href="#booking" class="service-link">Book Now &rarr;</a>
+        </div>
+
+        <!-- Card 6: Fillings & Crowns (Restorative) -->
+        <div class="service-card" data-category="restorative">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/>
+              <path d="M12 6v12M6 12h12"/>
+            </svg>
+          </div>
+          <h3>Fillings & Crowns</h3>
+          <p>Repair damaged, decayed, or fractured teeth seamlessly with our high-durability, tooth-colored composite fillings and custom ceramic crowns.</p>
+          <ul class="service-features">
+            <li>Metal-free composite fillings</li>
+            <li>Same-shade ceramic crowns</li>
+            <li>Painless restoration care</li>
+          </ul>
+          <a href="#booking" class="service-link">Book Now &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. About Section -->
+  <section class="about-section section-padding bg-light" id="about">
+    <div class="container about-container">
+      <div class="about-visual">
+        <div class="about-art-box">
+          <div class="badge-about">💯 Safe & High-Tech</div>
+          <div class="features-list-visual">
+            <div class="feature-visual-item">
+              <span class="icon">✓</span>
+              <span>Low-dose Digital X-Rays</span>
+            </div>
+            <div class="feature-visual-item">
+              <span class="icon">✓</span>
+              <span>Intraoral 3D Camera</span>
+            </div>
+            <div class="feature-visual-item">
+              <span class="icon">✓</span>
+              <span>Comfort Massage Chairs</span>
+            </div>
+          </div>
+          <!-- Modern Treatment Room Photo -->
+          <img class="about-img" src="assets/about_treatment.jpg" alt="Lumina Dental Studio high-tech relaxing treatment room" width="300" height="300">
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="sub-badge">Why Choose Us</span>
+        <h2>Redefining Your Dental Experience</h2>
+        <p class="lead-text">At Lumina Dental Studio, we believe dental visits should be relaxing, transparent, and completely comfortable.</p>
+        <p>
+          Founded in Chicago's historic Northside district, our boutique clinic is built around your peace of mind. We have swapped out the intimidating vibes, smells, and sounds of traditional offices for a warm, spa-like environment equipped with state-of-the-art dental technology.
+        </p>
+        <p>
+          Whether you need a simple cleaning or comprehensive implant surgery, we walk you through every step with full clarity, zero judgment, and exceptional care.
+        </p>
+        <div class="about-features">
+          <div class="about-feat-item">
+            <h4>Modern Comforts</h4>
+            <p>Enjoy overhead streaming screens, noise-canceling headphones, and cozy blankets during your care.</p>
+          </div>
+          <div class="about-feat-item">
+            <h4>Digital & Precision</h4>
+            <p>We use 3D digital scanners instead of messy, uncomfortable putty trays for dental molds.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Doctors Section -->
+  <section class="doctors-section section-padding" id="doctors">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-badge">Our Specialists</span>
+        <h2>Meet Our Expert Dentists</h2>
+        <p>Our dedicated doctors bring decades of academic excellence, advanced clinical training, and a gentle touch to every treatment.</p>
+      </div>
+
+      <div class="doctors-grid">
+        
+        <!-- Doctor 1: Sarah Jenkins -->
+        <div class="doctor-card">
+          <div class="doctor-image-container">
+            <img src="assets/dr_jenkins.jpg" alt="Dr. Sarah Jenkins, Lead General & Kids Dentist" class="doctor-img" width="320" height="260">
+            <div class="doctor-tag">Lead General & Kids Dentist</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Sarah Jenkins, DDS</h3>
+            <p class="doc-school">Northwestern University (DDS)</p>
+            <p class="doc-bio">
+              Dr. Jenkins is passionate about family dental wellness. With a warm, comforting demeanor, she specializes in anxiety-free preventive care and making dental visits fun for young children.
+            </p>
+            <div class="doctor-meta">
+              <span>★ 4.9 Rating</span>
+              <span>10+ Yrs Exp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 2: Marcus Chen -->
+        <div class="doctor-card">
+          <div class="doctor-image-container">
+            <img src="assets/dr_chen.jpg" alt="Dr. Marcus Chen, Cosmetic & Ortho Specialist" class="doctor-img" width="320" height="260">
+            <div class="doctor-tag">Cosmetic & Ortho Specialist</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Marcus Chen, DDS, MS</h3>
+            <p class="doc-school">UIC Dental (MS Orthodontics)</p>
+            <p class="doc-bio">
+              Dr. Chen is a premier provider of clear aligners and modern aesthetic bondings. He combines artistic precision with dental science to create beautiful, balanced smile makeovers.
+            </p>
+            <div class="doctor-meta">
+              <span>★ 5.0 Rating</span>
+              <span>12+ Yrs Exp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 3: Elena Rostova -->
+        <div class="doctor-card">
+          <div class="doctor-image-container">
+            <img src="assets/dr_rostova.jpg" alt="Dr. Elena Rostova, Implantologist & Surgeon" class="doctor-img" width="320" height="260">
+            <div class="doctor-tag">Implantologist & Surgeon</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Elena Rostova, DMD, PhD</h3>
+            <p class="doc-school">University of Pennsylvania (DMD)</p>
+            <p class="doc-bio">
+              Dr. Rostova specializes in dental implants and surgical therapies. Utilizing micro-surgical procedures and 3D digital guides, she ensures treatments are fast, safe, and highly predictable.
+            </p>
+            <div class="doctor-meta">
+              <span>★ 4.9 Rating</span>
+              <span>15+ Yrs Exp</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Treatment Process Section -->
+  <section class="process-section section-padding bg-light" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-badge">How It Works</span>
+        <h2>Your Treatment Process</h2>
+        <p>We strive to make your journey simple and transparent. Here is the step-by-step experience you will have with us.</p>
+      </div>
+
+      <div class="process-grid">
+        
+        <!-- Step 1 -->
+        <div class="process-card">
+          <div class="process-number">01</div>
+          <h3>Schedule & Consult</h3>
+          <p>Book your visit easily online or over the phone. We start with a friendly consultation to understand your unique smile goals and concerns.</p>
+          <div class="process-line"></div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-card">
+          <div class="process-number">02</div>
+          <h3>Digital Scan & Exam</h3>
+          <p>Using our comfortable 3D intraoral camera and ultra-low dose digital scans, we create a precise high-definition map of your mouth.</p>
+          <div class="process-line"></div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-card">
+          <div class="process-number">03</div>
+          <h3>Custom Plan Review</h3>
+          <p>Your dentist walks you through the 3D dental scan and presents a transparent treatment plan, outlining steps, timelines, and payment options.</p>
+          <div class="process-line"></div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-card">
+          <div class="process-number">04</div>
+          <h3>Gentle Care & Smile</h3>
+          <p>Sit back and relax in our massage chairs with entertainment options while we perform your treatment with extreme care, precision, and zero stress.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Testimonials/Reviews Section -->
+  <section class="reviews-section section-padding" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-badge">Testimonials</span>
+        <h2>What Our Patients Say</h2>
+        <p>Read about real transformations and comfortable clinic visits from our valued Lumina Dental Studio family.</p>
+      </div>
+
+      <div class="reviews-grid">
+        
+        <!-- Testimonial 1 -->
+        <div class="review-card">
+          <div class="review-rating">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">
+            "I used to experience extreme dental anxiety, but Lumina completely transformed my outlook. Dr. Jenkins and the dental assistants were incredibly patient, taking time to explain every single detail. The cleaning was completely painless!"
+          </p>
+          <div class="review-author">
+            <div class="author-avatar bg-blue">MK</div>
+            <div class="author-info">
+              <h4>Michael K.</h4>
+              <span>Patient since 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="review-card">
+          <div class="review-rating">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">
+            "Dr. Chen’s work with my clear aligners was top-tier. I completed my treatment two months ahead of schedule, and the results are better than I ever hoped. Plus, the studio feels like a peaceful boutique hotel lobby!"
+          </p>
+          <div class="review-author">
+            <div class="author-avatar bg-mint">SR</div>
+            <div class="author-info">
+              <h4>Sophia R.</h4>
+              <span>Cosmetic Patient</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="review-card">
+          <div class="review-rating">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">
+            "Dr. Elena Rostova is an exceptional clinician. I had a dental implant placed last year, and the entire process was seamless. There was virtually zero discomfort during recovery, and it looks and feels like my original tooth."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar bg-gray">DT</div>
+            <div class="author-info">
+              <h4>David T.</h4>
+              <span>Implant Patient</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FAQ Section -->
+  <section class="faq-section section-padding bg-light" id="faq">
+    <div class="container faq-container">
+      <div class="faq-intro">
+        <span class="sub-badge">Got Questions?</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Here are answers to the most common queries we receive about scheduling, insurance coverage, and procedures. If you have other questions, please contact us!</p>
+        <a href="#contact" class="btn btn-secondary">Contact Our Team</a>
+      </div>
+
+      <div class="faq-accordion">
+        
+        <!-- Accordion Item 1 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you accept dental insurance?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Yes, we accept most major dental PPO insurance plans. Our dedicated team will verify your benefits, submit claims on your behalf, and help you maximize your coverage. We provide clear, itemized cost breakdowns before any treatment starts so there are never any financial surprises.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 2 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What should I expect at my first visit?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Your first visit will last about 60 minutes. It includes a friendly review of your dental and medical history, low-radiation digital dental X-rays, a comprehensive oral health examination (including gum disease and oral cancer screenings), a gentle clean, and a personal consultation to discuss findings and outline a customized dental care plan.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 3 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How often should I get a dental checkup and cleaning?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>For most children and adults, we recommend a routine checkup and professional hygiene cleaning every six months. If you have a history of gum disease, frequent cavities, or compromised immune systems, we may recommend a customized hygiene schedule (every 3 to 4 months) to maintain your health.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 4 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What should I do if I experience a dental emergency?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>If you experience a dental emergency—such as a severe toothache, a broken/chipped tooth, or a knocked-out permanent tooth—please call our clinic immediately at <strong>9876543213</strong>. We keep emergency blocks open daily and will make every effort to schedule you for a same-day examination.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Appointment Booking Form Section -->
+  <section class="booking-section section-padding" id="booking">
+    <div class="container booking-container">
+      <div class="booking-info">
+        <span class="sub-badge">Appointment Booking</span>
+        <h2>Ready to Transform Your Smile?</h2>
+        <p>Book your convenient slot in less than two minutes. Select your desired service and dentist, pick a date and time, and we'll take care of the rest.</p>
+        
+        <div class="info-blocks">
+          <div class="info-block">
+            <span class="icon">📅</span>
+            <div>
+              <h4>Easy Rescheduling</h4>
+              <p>Need to modify your appointment? Just notify us 24 hours in advance.</p>
+            </div>
+          </div>
+          <div class="info-block">
+            <span class="icon">💬</span>
+            <div>
+              <h4>Immediate Support</h4>
+              <p>Have quick questions? Call our office at 9876543213 for help.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-form-card">
+        <h3>Request an Appointment</h3>
+        <p class="form-desc">Fill out your details and select a preferred slot below.</p>
+        
+        <form id="appointment-form" novalidate>
+          <div class="form-grid">
+            
+            <div class="form-group">
+              <label for="full-name">Full Name *</label>
+              <input type="text" id="full-name" name="name" placeholder="John Doe" required>
+              <span class="error-msg" id="name-error">Please enter your full name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email-address">Email Address *</label>
+              <input type="email" id="email-address" name="email" placeholder="john@example.com" required>
+              <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone-number">Phone Number *</label>
+              <input type="tel" id="phone-number" name="phone" placeholder="(123) 456-7890" required>
+              <span class="error-msg" id="phone-error">Please enter a valid 10-digit phone number.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="service-select">Select Service *</label>
+              <select id="service-select" name="service" required>
+                <option value="" disabled selected>Choose a treatment...</option>
+                <option value="Exams & Cleanings">Exams & Cleanings (Preventive)</option>
+                <option value="Teeth Whitening">Teeth Whitening (Cosmetic)</option>
+                <option value="Clear Aligner Ortho">Clear Aligner Ortho (Cosmetic)</option>
+                <option value="Advanced Implants">Advanced Implants (Restorative)</option>
+                <option value="Kids Dentistry">Kids Dentistry (Pediatric)</option>
+                <option value="Fillings & Crowns">Fillings & Crowns (Restorative)</option>
+              </select>
+              <span class="error-msg" id="service-error">Please select a service.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="doctor-select">Preferred Dentist *</label>
+              <select id="doctor-select" name="doctor" required>
+                <option value="" disabled selected>Choose a dentist...</option>
+                <option value="Dr. Sarah Jenkins">Dr. Sarah Jenkins (General & Kids)</option>
+                <option value="Dr. Marcus Chen">Dr. Marcus Chen (Cosmetic & Ortho)</option>
+                <option value="Dr. Elena Rostova">Dr. Elena Rostova (Implantology)</option>
+                <option value="First Available Doctor">First Available Specialist</option>
+              </select>
+              <span class="error-msg" id="doctor-error">Please select a dentist.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="appointment-date">Preferred Date *</label>
+              <input type="date" id="appointment-date" name="date" required>
+              <span class="error-msg" id="date-error">Please select a valid future date.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="appointment-time">Preferred Time Slot *</label>
+              <select id="appointment-time" name="time" required>
+                <option value="" disabled selected>Choose a time...</option>
+                <option value="09:00 AM">Morning (09:00 AM - 11:30 AM)</option>
+                <option value="01:30 PM">Afternoon (01:30 PM - 03:30 PM)</option>
+                <option value="04:00 PM">Late Afternoon (04:00 PM - 05:30 PM)</option>
+              </select>
+              <span class="error-msg" id="time-error">Please select a time slot.</span>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="booking-notes">Additional Notes / Symptoms (Optional)</label>
+              <textarea id="booking-notes" name="notes" rows="3" placeholder="Tell us if you have dental pain or specific details..."></textarea>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full-width">Request Booking</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Contact Section -->
+  <section class="contact-section section-padding bg-light" id="contact">
+    <div class="container contact-container">
+      
+      <!-- Contact Info Details -->
+      <div class="contact-info-panel">
+        <span class="sub-badge">Get In Touch</span>
+        <h2>We’d Love to Hear From You</h2>
+        <p>Have questions about treatments, scheduling, or payments? Contact us today. Our friendly team is ready to assist you.</p>
+        
+        <div class="contact-methods">
+          <!-- Address -->
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h4>Clinic Location</h4>
+              <p>54 Elm Street, Northside Plaza, Chicago, IL 60611</p>
+            </div>
+          </div>
+          <!-- Phone -->
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <h4>Call or Text Us</h4>
+              <p><a href="tel:9876543213" class="contact-link">9876543213</a></p>
+            </div>
+          </div>
+          <!-- Email -->
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-details">
+              <h4>Send An Email</h4>
+              <p><a href="mailto:demo4@tscgportfolio.com" class="contact-link">demo4@tscgportfolio.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hours Table -->
+        <div class="hours-card">
+          <h4>Studio Hours</h4>
+          <ul class="hours-list">
+            <li><span>Monday - Friday</span> <span>8:00 AM - 6:00 PM</span></li>
+            <li><span>Saturday</span> <span>9:00 AM - 2:00 PM</span></li>
+            <li><span>Sunday</span> <span class="closed-label">Closed</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Styled Map/Canvas representation -->
+      <div class="contact-map-panel">
+        <div class="map-card">
+          <div class="map-header">
+            <h4>Lumina Clinic Location Map</h4>
+            <span>Downtown Chicago Area</span>
+          </div>
+          <div class="map-canvas-mock" id="map-canvas">
+            <!-- Dynamic Vector Street Map representation with CSS -->
+            <div class="grid-line horizontal-line" style="top: 25%"><span>Elm Street</span></div>
+            <div class="grid-line horizontal-line" style="top: 60%"><span>Grand Avenue</span></div>
+            <div class="grid-line vertical-line" style="left: 30%"><span>North Avenue</span></div>
+            <div class="grid-line vertical-line" style="left: 70%"><span>Michigan Avenue</span></div>
+            
+            <div class="park-mock">Northside Park</div>
+            <div class="lake-mock">Lake Michigan</div>
+            
+            <div class="map-pin-pulse"></div>
+            <div class="map-pin">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+              <div class="pin-tooltip">Lumina Dental Studio<br>54 Elm Street</div>
+            </div>
+          </div>
+          <div class="map-footer">
+            <span class="map-legend">🚗 Free validation parking available at Northside Plaza underground garage.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 11. Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo footer-logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C8.5 2 6 5 6 9.5C6 14 10 18 12 21.5C14 18 18 14 18 9.5C18 5 15.5 2 12 2ZM12 12C10.62 12 9.5 10.88 9.5 9.5C9.5 8.12 10.62 7 12 7C13.38 7 14.5 8.12 14.5 9.5C14.5 10.88 13.38 12 12 12Z" fill="currentColor"/>
+          </svg>
+          <span>Lumina</span>Dental
+        </a>
+        <p class="footer-desc">
+          Modern dental care focusing on comfort, transparency, and clinical excellence. Creating Chicago's brightest smiles.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook" class="social-icon">f</a>
+          <a href="#" aria-label="Instagram" class="social-icon">ig</a>
+          <a href="#" aria-label="Twitter" class="social-icon">tw</a>
+          <a href="#" aria-label="LinkedIn" class="social-icon">in</a>
+        </div>
+      </div>
+
+      <div class="footer-links-group">
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Dental Services</a></li>
+            <li><a href="#about">About Our Studio</a></li>
+            <li><a href="#doctors">Our Specialists</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Support & Info</h4>
+          <ul>
+            <li><a href="#process">Treatment Process</a></li>
+            <li><a href="#reviews">Patient Reviews</a></li>
+            <li><a href="#faq">Frequently Asked FAQs</a></li>
+            <li><a href="#contact">Contact & Hours</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>Contact Info</h4>
+        <p>📍 54 Elm Street, Northside Plaza, Chicago, IL 60611</p>
+        <p>📞 Phone: <a href="tel:9876543213">9876543213</a></p>
+        <p>✉️ Email: <a href="mailto:demo4@tscgportfolio.com">demo4@tscgportfolio.com</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 Lumina Dental Studio. All rights reserved.</p>
+        <p class="portfolio-disclaimer">
+          Project Label: TSCG Demo Website 4 | Portfolio Demo only. Fictional content.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment Success Modal -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-header-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h2>Booking Request Submitted!</h2>
+      <p class="modal-intro">Thank you, <strong id="summary-name">Patient</strong>. We have received your appointment request. Here is your summary:</p>
+      
+      <div class="modal-summary-card">
+        <div class="summary-row">
+          <span>Treatment:</span>
+          <strong id="summary-service">-</strong>
+        </div>
+        <div class="summary-row">
+          <span>Specialist:</span>
+          <strong id="summary-doctor">-</strong>
+        </div>
+        <div class="summary-row">
+          <span>Date & Time:</span>
+          <strong id="summary-datetime">-</strong>
+        </div>
+        <div class="summary-row">
+          <span>Contact Phone:</span>
+          <strong id="summary-phone">-</strong>
+        </div>
+      </div>
+      
+      <p class="modal-instructions">We will text or email you within 2 business hours to confirm your final time. If you need to make changes, please keep your phone handy.</p>
+      <button class="btn btn-primary" id="modal-close-btn">Done</button>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
